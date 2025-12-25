@@ -1,0 +1,4 @@
+backend = "ssm"
+region = "{{ .Env.AWS_REGION }}"
+table = ""
+path = ""
