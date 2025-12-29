@@ -1,9 +1,10 @@
+backend = "ssm"
+region  = "us-east-1"
+
 [template]
 src = ".env.tmpl"
 dest = "/app/.env"
 keys = [
-    "/{{ .Env.NAMESPACE }}/mongo",
-    "/{{ .Env.NAMESPACE }}/port"
+    "/dev/mongo",
+    "/dev/port"
 ]
-check_cmd = "/usr/local/bin/confd -onetime"
-reload_cmd = "supervisorctl restart node"
