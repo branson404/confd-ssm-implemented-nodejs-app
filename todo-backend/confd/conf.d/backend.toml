@@ -1,6 +1,3 @@
-backend = "ssm"
-region  = "us-east-1"
-
 [template]
 src = ".env.tmpl"
 dest = "/app/.env"
