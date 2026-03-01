@@ -61,12 +61,11 @@ The system uses:
 
 ### Step 1: Store Parameters in AWS SSM
 
-Example parameters:
+Used parameters:
 
 
-/todo-app/env
-/todo-app/DB_USER
-/todo-app/DB_PASSWORD
+"/dev/mongo",
+"/dev/port"
 
 
 ---
