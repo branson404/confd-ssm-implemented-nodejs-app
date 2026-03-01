@@ -27,7 +27,7 @@ The system uses:
 
 2. `supervisord` ensures:
    - `confd` runs correctly
-   - The Node.js app starts after configuration is injected
+   - The Node.js app starts after configuration is injected by ensuring `depends_on=confd` is added
 
 3. Kubernetes:
    - Deploys the Pod
